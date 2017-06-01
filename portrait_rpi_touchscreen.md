@@ -9,16 +9,3 @@ Make the script executable|`chmod +x touch_rotate.sh`
 Make the script run when the GUI starts by editing autostart|`sudo nano ~/.config/lxsession/LXDE-pi/autostart`
 Add this to the bottom to run your script|`@/home/pi/touch_rotate.sh`
 Reboot|`sudo reboot`
-
-
-Description|Command
------------- | -------------
-1. Install xinput|`sudo apt-get install xinput`
-2. Rotate the display by editing config.txt|`sudo nano /boot/config.txt`
-3. Add this to the buttom of the file|`display_rotate=1 Use Ctrl X, Yes to Save`
-4. Create a script to rotate the touchscreen|`nano /home/pi/touch_rotate.sh`
-5. Add the following command|`xinput --set-prop 'FT5406 memory based driver' 'Coordinate Transformation Matrix'  0 1 0 -1 0 1 0 0 1`
-6. Make the script executable|`chmod +x touch_rotate.sh`
-7. Make the script run when the GUI starts by editing autostart|`sudo nano ~/.config/lxsession/LXDE-pi/autostart`
-8. Add this to the bottom to run your script|`@/home/pi/touch_rotate.sh`
-9. Reboot|`sudo reboot`
