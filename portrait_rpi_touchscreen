@@ -1,5 +1,5 @@
 1. Install xinput:
-`sudo apt-get install xinput`
+`<sudo apt-get install xinput>`
 2. Rotate the display by editing config.txt:
 `sudo nano /boot/config.txt`
 .. add this to the buttom of the file:
